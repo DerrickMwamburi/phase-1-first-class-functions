@@ -1,21 +1,21 @@
+// receivesAFunction should take a callback and call it
 function receivesAFunction(callback) {
-    callback(); // Call the provided callback function
+    callback();
   }
-
-
+  
+  // returnsANamedFunction should return a named function
   function returnsANamedFunction() {
-    function namedFunction() { // Define a named function
-      console.log("I am a named function!");
+    function namedFunction() {
+      console.log("This is a named function");
     }
-    return namedFunction; // Return the named function
+    return namedFunction;
+  }
+  
+  // returnsAnAnonymousFunction should return an anonymous function
+  function returnsAnAnonymousFunction() {
+    return function() {
+      console.log("This is an anonymous function");
+    };
   }
 
 
-
-    function returnsAnAnonymousFunction() {
-        return function() { // Define an anonymous function
-        console.log("I am an anonymous function!");
-        };
-
-
-        
